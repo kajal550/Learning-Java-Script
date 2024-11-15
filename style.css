@@ -1,0 +1,25 @@
+h1{
+    font-style: italic;
+    font-size: 4O  px;
+    color: red  ;
+    text-align: center;
+}
+p{
+    font-style: bold;
+    font-size: 4O  px;
+    color: purple  ;
+    text-align: center;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+a{
+    font-style: bold;
+    font-size: 20 px;
+    color: blue  ;
+    padding: 5px;
+    background-color: aquamarine;
+    
+}
+div{
+    text-align: center;
+}
