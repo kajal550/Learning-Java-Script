@@ -1,47 +1,8 @@
-.Container{
-    height: 500px;
-    width: 300px;
-    background-color: grey;
-    margin: 300px;
-}
-.Box{
-    width:100px;
-    height: 100px;
-}
-.red{
-    background-color: red;
-    position: static;
-    right: 50%;
-    bottom: 50%;
-}
-.blue{
-    background-color: blue;
-    position: relative;
-    top: 50px;
-    left: 50px;
-    
-}
-.green{
-    background-color: green;
-    position: absolute;
-    top: 70px;
-    left: 50px;
-
-    
-}
-.yellow{
-    background-color: yellow;
-    position: fixed;
-    right: 50px;
-    bottom:50px;
-    
-}
-.Pink{
-    background-color: pink;
-    position: sticky;
-    top:50px;
-   
-}
-.spacer{
-    height: 300vh;
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    overflow:hidden;
+    transform: scale(1.5);
 }
