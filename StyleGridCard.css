@@ -1,0 +1,19 @@
+.item{
+    background-color: (255 54 56 0);
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(10em,1fr));
+    grid-template-rows: 8em;
+    grid-gap: 1em;
+    background-color: orange;
+    padding: 1em;
+    height: 75vh;
+}
