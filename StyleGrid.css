@@ -1,0 +1,25 @@
+.container{
+    width: 60vw;
+    height: 95vh;
+    background-color: yellow;
+    border: 6px solid red;
+    display:grid;
+    margin: auto;
+    grid-template-columns: 300px 200px;
+    grid-template-rows: 100px 100px 100px;
+    grid-gap: 20px;
+    grid-column-gap:12px;
+    grid-row-gap: 10px;
+    place-content: center;
+}
+.box {
+    border: 1px solid red;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+} 
+h1{
+    color: purple;
+    font-size: 50px;
+} 
