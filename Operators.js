@@ -10,6 +10,9 @@ console.log(p-q);
 console.log(p*q);
 console.log(p/q);
 
+let spelling="Kajal"
+console.log(spelling);
+
 
 //boolean
 
