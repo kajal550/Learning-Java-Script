@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./InputForm.css" />
+
+
+
+<script>
+
+const users = [];
+    
+    function onFormSubmit() {     
+      const form = document.getElementById('userForm');
+          if (form.checkValidity()) {
+      const user = {
+            firstName: document.getElementById('firstName').value,
+            lastName: document.getElementById('lastName').value,
+            age: document.getElementById('age').value,
+            phoneNumber: document.getElementById('phoneNumber').value,
+          };
+
+          function renderTable(users) {
+            const tableBody = document.querySelector("#userTable tbody");
+
+            tableBody.innerHTML = '';
+
+            users.forEach(user => {
+                const row = document.createElement('tr');
+
+                Object.values(user).forEach(value => {
+                    const cell = document.createElement('td');
+                    cell.textContent = value;
+                    row.appendChild(cell);
+                });
+
+                tableBody.appendChild(row);
+            });
+        }
+        renderTable(users);
+        
+            users.push(user);
+          }
+          console.log("The users", users)
+    }
+
+      function submitForm() {
+        const form = document.getElementById('userForm');
+        if (form.checkValidity()) {
+          alert("Form Submitted Successfully");
+          form.reset();
+        } else {
+          alert("Please fill in all fields correctly.");
+        }
+      }
+
+</script>
+
+</head> 
+<body>
+
+  <h1>User Details</h1>
+
+    <table id="userTable" border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+        
+        </tbody>
+    </table>
+
+    <h1>User Information Form</h1>
+  <form id="userForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" required>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" min="0" required>
+    
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="tel" id="phoneNumber" pattern="[0-9]{10}" required>
+    
+    <button type="button" onclick="onFormSubmit()">Submit</button>
+    <button type="button" onclick="submitForm()">Refresh</button>
+  </form>
+</body>
+</html>
+
+ 

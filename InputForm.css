@@ -1,0 +1,27 @@
+button {
+    background-color: red;
+    border: 3px solid transparent;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+}
+
+h1{
+    color: purple;
+    font-size: 80px;
+}
+
+form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 300px;
+}
+
+input {
+    width: 100%;
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+
